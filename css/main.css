@@ -1,0 +1,225 @@
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+}
+
+.header {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+  background-color: #0d192b;
+}
+
+.header .card {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border: 1px solid black;
+  width: 320px;
+  height: 530px;
+  background-color: #14253d;
+  border-radius: 22px;
+}
+
+.header .card__header {
+  position: absolute;
+  top: 3%;
+  left: 5%;
+  padding: 1em 2em;
+  width: 285px;
+  height: 280px;
+  border-radius: 22px;
+  background-image: url("../images/image-equilibrium.jpg");
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.header .card__header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00fff7;
+  opacity: 0;
+  -webkit-transition: opacity 0.4s;
+  transition: opacity 0.4s;
+}
+
+.header .card__header::after {
+  content: '';
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  right: 0;
+  bottom: 0;
+  width: 20%;
+  height: 20%;
+  background-image: url("../images/icon-view.svg");
+  background-position: center;
+  background-size: cover;
+  opacity: 0;
+  -webkit-transition: opacity 0.4s;
+  transition: opacity 0.4s;
+}
+
+.header .card__header:hover::before {
+  opacity: 0.3;
+}
+
+.header .card__header:hover::after {
+  opacity: 1;
+}
+
+.header .card__text {
+  position: absolute;
+  top: 60%;
+  left: 0%;
+  padding: 0em 2em;
+  text-align: left;
+}
+
+.header .card__text h1 {
+  font-size: 2.4rem;
+  margin-bottom: 0.7em;
+  color: white;
+  -webkit-transition: color .4s;
+  transition: color .4s;
+  cursor: pointer;
+}
+
+.header .card__text p {
+  font-size: 1.4rem;
+  color: #8bacda;
+}
+
+.header .card__text h1:hover {
+  color: #00fff7;
+}
+
+.header .card__eth {
+  top: 80%;
+  left: 0%;
+  position: relative;
+  text-align: center;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+
+.header .card__eth .eth {
+  left: 3%;
+  top: 0%;
+  position: absolute;
+  text-align: left;
+  margin-left: 1em;
+  text-decoration: none;
+  width: 100px;
+  color: #00fff7;
+  text-align: center;
+}
+
+.header .card__eth .eth .svgE {
+  position: absolute;
+  padding: 0em 0em;
+  left: -10%;
+}
+
+.header .card .number {
+  position: absolute;
+  top: 0;
+  left: 66%;
+  text-decoration: none;
+  color: white;
+}
+
+.header .card .number .svgT {
+  position: absolute;
+  left: -25%;
+}
+
+.header .card__name {
+  position: relative;
+  top: 91%;
+  left: -9%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 80%;
+}
+
+.header .card__name::after {
+  content: '';
+  position: absolute;
+  top: -49%;
+  left: 16%;
+  right: 0;
+  bottom: 0;
+  width: 110%;
+  height: 1px;
+  background: #8bacda;
+}
+
+.header .card__name img {
+  width: 30px;
+}
+
+.header .card__center {
+  font-size: 1.1rem;
+  padding: 0em;
+  margin-left: 1em;
+  color: white;
+  text-decoration: none;
+}
+
+.header .card__center span {
+  color: white;
+  -webkit-transition: color .4s;
+  transition: color .4s;
+}
+
+.header .card__center span:hover {
+  color: #00fff7;
+}
+/*# sourceMappingURL=main.css.map */
